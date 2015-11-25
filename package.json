@@ -1,0 +1,27 @@
+{
+  "name": "demo-postcss",
+  "version": "1.0.0",
+  "description": "Demo para el artículo sobre Gulp y postCSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgeatgu/gulp-postCSS.git"
+  },
+  "keywords": [
+    "postCSS"
+  ],
+  "author": "Jorge Aznar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgeatgu/gulp-postCSS/issues"
+  },
+  "homepage": "https://github.com/jorgeatgu/gulp-postCSS",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "postcss-pxtorem": "^3.1.0",
+    "rucksack-css": "^0.8.5"
+  }
+}
