@@ -1,0 +1,21 @@
+body {
+	background-color: #001F3F;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+section article {
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 1.25rem;
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #FFDC00;
+}
+/*# sourceMappingURL=styles.css.map */

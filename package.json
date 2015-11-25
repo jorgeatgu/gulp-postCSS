@@ -21,7 +21,11 @@
   "homepage": "https://github.com/jorgeatgu/gulp-postCSS",
   "devDependencies": {
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-rucksack": "^0.1.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-nested": "^1.0.0",
     "postcss-pxtorem": "^3.1.0",
+    "postcss-simple-vars": "^1.1.0",
     "rucksack-css": "^0.8.5"
   }
 }

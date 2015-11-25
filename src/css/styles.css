@@ -1,0 +1,29 @@
+$color-background: #001F3F;
+$color-texto: #FFDC00;
+
+
+@alias {
+  bgc: background-color;
+  bxz: box-sizing;
+  bbx: border-box;
+}
+
+body {
+	bgc: $color-background;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 0;
+	article {
+		width: 50%;
+		display: inline-block;
+		bxz: border-box;
+		padding: 0 20px;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		color: $color-texto;
+	}
+}
