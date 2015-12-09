@@ -23,8 +23,17 @@ section {
 		bxz: border-box;
 		padding: 0 20px;
 		font-family: Arial, sans-serif;
-		font-size: 16px;
+		font-size: 1rem;
 		line-height: 20px;
 		color: $color-texto;
+		&::after {
+			content: '*';
+			font-size: 2rem;
+			color: rgba(237, 106, 67, 0.9);
+		}
+		&:nth-child(2) {
+			background-color: rgba(237, 106, 67, 0.9);
+			color: #fff;
+		}
 	}
 }

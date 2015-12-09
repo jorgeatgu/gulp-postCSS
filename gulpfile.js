@@ -41,7 +41,7 @@ gulp.task('ie8', function() {
 		oldie
 	];
 	//Aquí la ruta de donde coge nuestros css
-	return gulp.src('./src/css/styles.css')
+	return gulp.src('./dist/css/styles.css')
 		.pipe(rucksack())
 		.pipe(postcss(processors))
 		.pipe(rename({

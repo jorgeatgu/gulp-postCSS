@@ -19,4 +19,15 @@ section article {
 	line-height: 1.25rem;
 	color: #FFDC00;
 }
+
+section article::after {
+	content: '*';
+	font-size: 2rem;
+	color: rgba(237, 106, 67, 0.9);
+}
+
+section article:nth-child(2) {
+	background-color: rgba(237, 106, 67, 0.9);
+	color: #fff;
+}
 /*# sourceMappingURL=styles.css.map */

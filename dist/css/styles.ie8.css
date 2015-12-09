@@ -19,3 +19,14 @@ section article {
 	line-height: 20px;
 	color: #FFDC00;
 }
+
+section article:after {
+	content: '*';
+	font-size: 32px;
+	color: #ed6a43;
+}
+
+section :first-child + article {
+	background-color: #ed6a43;
+	color: #fff;
+}
