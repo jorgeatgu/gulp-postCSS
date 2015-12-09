@@ -10,7 +10,7 @@ $color-texto: #FFDC00;
 
 body {
 	bgc: $color-background;
-	opacity: .45;
+	filter: alpha(opacity=45);
 }
 
 section {

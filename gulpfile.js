@@ -7,6 +7,7 @@ var rucksack = require('gulp-rucksack');
 var pxtorem = require('postcss-pxtorem');
 var sourcemaps = require('gulp-sourcemaps');
 var oldie = require("oldie");
+var rename = require('gulp-rename');
 
 gulp.task('css', function() {
 	var processors = [
@@ -20,8 +21,7 @@ gulp.task('css', function() {
 			replace: true,
 			media_query: false
 		}),
-		autoprefixer,
-		oldie
+		autoprefixer
 	];
 	//Aquí la ruta de donde coge nuestros css
 	return gulp.src('./src/css/styles.css')
@@ -29,6 +29,20 @@ gulp.task('css', function() {
 		.pipe(sourcemaps.init())
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('./dist/css'));
+
+});
+
+gulp.task('ie8', function() {
+	var processors = [
+		oldie
+	];
+	//Aquí la ruta de donde coge nuestros css
+	return gulp.src('./src/css/styles.css')
+		.pipe(postcss(processors))
+		.pipe(rename({
+			suffix: '.ie8'
+		}))
 		.pipe(gulp.dest('./dist/css'));
 });
 
