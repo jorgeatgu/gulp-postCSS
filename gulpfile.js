@@ -35,10 +35,14 @@ gulp.task('css', function() {
 
 gulp.task('ie8', function() {
 	var processors = [
+		vars,
+		nested,
+		rucksack,
 		oldie
 	];
 	//Aquí la ruta de donde coge nuestros css
 	return gulp.src('./src/css/styles.css')
+		.pipe(rucksack())
 		.pipe(postcss(processors))
 		.pipe(rename({
 			suffix: '.ie8'

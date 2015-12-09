@@ -1,6 +1,6 @@
 body {
 	background-color: #001F3F;
-	filter: alpha(opacity=45);
+	opacity: .45;
 }
 
 section {
@@ -10,13 +10,13 @@ section {
 }
 
 section article {
-	width: 50%;
+	width: calc(100% / 2);
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 0 20px;
+	padding: 0 1.25rem;
 	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 1rem;
+	line-height: 1.25rem;
 	color: #FFDC00;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -18,7 +18,7 @@ section {
 	margin: 0 auto;
 	font-size: 0;
 	article {
-		width: 50%;
+		width: calc(100% / 2);
 		display: inline-block;
 		bxz: border-box;
 		padding: 0 20px;
