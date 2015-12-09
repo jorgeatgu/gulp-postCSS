@@ -6,6 +6,7 @@ var nested = require('postcss-nested');
 var rucksack = require('gulp-rucksack');
 var pxtorem = require('postcss-pxtorem');
 var sourcemaps = require('gulp-sourcemaps');
+var oldie = require("oldie");
 
 gulp.task('css', function() {
 	var processors = [
@@ -19,7 +20,8 @@ gulp.task('css', function() {
 			replace: true,
 			media_query: false
 		}),
-		autoprefixer
+		autoprefixer,
+		oldie
 	];
 	//Aquí la ruta de donde coge nuestros css
 	return gulp.src('./src/css/styles.css')
