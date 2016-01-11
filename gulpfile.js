@@ -24,12 +24,18 @@ gulp.task('css', function() {
 		}),
 		autoprefixer,
 		sorting({
-			"sort-order": [
-				["font-family", "font-size", "font-weight", "line-height"],
-		["..."],
-				["margin", "padding", "width"]
-			]
+			"sort-order": ["font-family", "font-size", "font-weight", "line-height"]
 		})
+		//sorting({
+		//	"sort-order": [ ["font-family", "font-size", "font-weight", "line-height"], ["margin", "padding", "width"] ]
+		//})
+		//sorting({
+		//  "sort-order": [
+		//    ["font-family", "font-size", "font-weight", "line-height"],
+		//    ["..."],
+		//    ["margin", "padding", "width"]
+		// ]
+		// })
 	];
 	//Aquí la ruta de donde coge nuestros css
 	return gulp.src('./src/css/styles.css')

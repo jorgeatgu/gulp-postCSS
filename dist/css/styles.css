@@ -14,11 +14,11 @@ section article {
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.25rem;
-	padding: 0 1.25rem;
-	width: calc(100% / 2);
 	display: inline-block;
 	box-sizing: border-box;
 	color: #FFDC00;
+	padding: 0 1.25rem;
+	width: calc(100% / 2);
 }
 
 section article::after {
@@ -56,13 +56,13 @@ section article:nth-child(2) {
 	font-weight: 800;
 	line-height: 1.25rem;
 
-	margin: 0 auto;
-	padding: 0.63rem 1.25rem;
-	width: 20%;
-
 	position: absolute;
 	top: 0;
 	right: 0;
 	box-sizing: border-box;
+
+	margin: 0 auto;
+	padding: 0.63rem 1.25rem;
+	width: 20%;
 }
 /*# sourceMappingURL=styles.css.map */
