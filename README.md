@@ -1,7 +1,7 @@
 # gulp-postCSS
 
 
-Repositorio para los diferentes artículos que voy escribiendo en mi [blog](http://jorgeatgu.com/blog/)
+Repositorio para los diferentes artículos que voy escribiendo sobre [postCSS](https://github.com/postcss/postcss) en mi [blog](http://jorgeatgu.com/blog/)
 
 - [Configurando postCSS en Gulp](http://jorgeatgu.com/blog/postcss-gulp/)
 
