@@ -26,7 +26,7 @@ gulp.task('css', function() {
 		sorting({
 			"sort-order": [
 				["font-family", "font-size", "font-weight", "line-height"],
-				[...],
+		["..."],
 				["margin", "padding", "width"]
 			]
 		})
