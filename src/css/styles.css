@@ -54,3 +54,17 @@ section {
 	font-weight: 800;
 	padding: 10px 20px;
 }
+
+.sorting-forever-alone {
+	line-height: 20px;
+	width: 20%;
+	font-family: Verdana, serif;
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: 800;
+	padding: 10px 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+}
