@@ -37,3 +37,20 @@ section {
 		}
 	}
 }
+
+.sorting {
+	line-height: 20px;
+	font-family: Verdana, serif;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.sorting-groups {
+	line-height: 20px;
+	width: 20%;
+	font-family: Verdana, serif;
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: 800;
+	padding: 10px 20px;
+}

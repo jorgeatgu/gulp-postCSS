@@ -4,30 +4,49 @@ body {
 }
 
 section {
-	width: 80%;
-	margin: 0 auto;
 	font-size: 0;
+
+	margin: 0 auto;
+	width: 80%;
 }
 
 section article {
-	width: calc(100% / 2);
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 0 1.25rem;
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.25rem;
+	padding: 0 1.25rem;
+	width: calc(100% / 2);
+	display: inline-block;
+	box-sizing: border-box;
 	color: #FFDC00;
 }
 
 section article::after {
-	content: '*';
 	font-size: 2rem;
+	content: '*';
 	color: rgba(237, 106, 67, 0.9);
 }
 
 section article:nth-child(2) {
 	background-color: rgba(237, 106, 67, 0.9);
 	color: #fff;
+}
+
+.sorting {
+	font-family: Verdana, serif;
+	font-size: 1.25rem;
+	font-weight: 800;
+	line-height: 1.25rem;
+}
+
+.sorting-groups {
+	font-family: Verdana, serif;
+	font-size: 1.25rem;
+	font-weight: 800;
+	line-height: 1.25rem;
+
+	margin: 0 auto;
+	padding: 0.63rem 1.25rem;
+	width: 20%;
 }
 /*# sourceMappingURL=styles.css.map */
