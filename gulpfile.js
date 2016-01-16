@@ -9,6 +9,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var oldie = require("oldie");
 var rename = require('gulp-rename');
 var sorting = require('postcss-sorting');
+var colorblindPlugin = require("postcss-colorblind");
+
 
 gulp.task('css', function() {
 	var processors = [
@@ -25,7 +27,7 @@ gulp.task('css', function() {
 		autoprefixer,
 		sorting({
 			"sort-order": ["font-family", "font-size", "font-weight", "line-height"]
-		})
+		}),
 		//sorting({
 		//	"sort-order": [ ["font-family", "font-size", "font-weight", "line-height"], ["margin", "padding", "width"] ]
 		//})
@@ -36,6 +38,9 @@ gulp.task('css', function() {
 		//    ["margin", "padding", "width"]
 		// ]
 		// })
+		colorblindPlugin({
+			protanomaly
+		})
 	];
 	//Aquí la ruta de donde coge nuestros css
 	return gulp.src('./src/css/styles.css')
