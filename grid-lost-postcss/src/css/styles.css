@@ -90,6 +90,17 @@ body {
 	}
 }
 
+.septimo {
+	height: 100%;
+	bgc: #000;
+	lost-utility: clearfix;
+	article {
+		lost-waffle: 1/2;
+		bgc: #f1f1f1;
+		color: red;
+	}
+}
+
 
 .btn-volver-blog {
 	bgc: #001F3F;
