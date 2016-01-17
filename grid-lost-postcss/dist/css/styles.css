@@ -1,13 +1,27 @@
 body {
+	font-family: 'Work Sans', sans-serif;
+
 	background-color: #f1f1f1;
+}
+
+.section-s {
+	font-weight: 800;
+
+	padding: 1.25rem;
+	box-sizing: border-box;
+	margin: 20px 0;
+}
+
+.section-s article {
+	font-weight: 400;
+	box-sizing: border-box;
+	padding: 0.63rem;
 }
 
 .primero {
 	*zoom: 1;
-	background-color: #001F3F;
+	background-color: rgba(0, 31, 63,.8);
 	color: #fff;
-	padding: 1.25rem;
-	box-sizing: border-box;
 }
 
 .primero:before {
@@ -23,6 +37,7 @@ body {
 
 .primero article {
 	width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+	background-color: #001F3F;
 }
 
 .primero article:nth-child(n) {
@@ -41,5 +56,49 @@ body {
 
 .primero article:nth-child(3n + 1) {
 	clear: left;
+}
+
+.segundo {
+	*zoom: 1;
+	background-color: rgba(255, 220, 0,.5);
+	color: #111;
+}
+
+.segundo:before {
+	content: '';
+	display: table;
+}
+
+.segundo:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.segundo article {
+	width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+	background-color: #FFDC00;
+}
+
+.segundo article:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.segundo article:last-child {
+	margin-right: 0;
+}
+
+.segundo article:nth-child(3n) {
+	margin-right: 0;
+}
+
+.segundo article:nth-child(3n + 1) {
+	clear: left;
+}
+
+.segundo article:first-child {
+	margin-right: calc(99.99% * 1/3 - (30px - 30px * 1/3) + (30px * 2)) !important;
 }
 /*# sourceMappingURL=styles.css.map */

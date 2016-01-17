@@ -10,15 +10,40 @@ $color-texto: #FFDC00;
 
 body {
 	bgc: #f1f1f1;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.section-s {
+	padding: 20px;
+	bxz: bbx;
+	font-weight: 800;
+	margin: 20px 0;
+	article {
+		bxz: bbx;
+		font-weight: 400;
+		padding: 10px;
+	}
 }
 
 .primero {
 	lost-utility: clearfix;
-	bgc: #001F3F;
+	bgc: rgba(0, 31, 63,.8);
 	color: #fff;
-	padding: 20px;
-	bxz: bbx;
 	article {
 		lost-column: 1/3;
+		bgc: #001F3F;
+	}
+}
+
+.segundo {
+	lost-utility: clearfix;
+	bgc: rgba(255, 220, 0,.5);
+	color: #111;
+	article {
+		lost-column: 1/3;
+		bgc: #FFDC00;
+		&:first-child {
+			lost-offset: 1/3;
+		}
 	}
 }
