@@ -82,7 +82,25 @@ body {
 
 .sexto {
 	height: 100%;
+	bgc: rgba(133, 20, 75,.8);
 	article {
 		lost-row: 1/3;
+		bgc: #85144B;
+		color: #fff;
 	}
+}
+
+
+.btn-volver-blog {
+	bgc: #001F3F;
+	color: #FFDC00;
+	border: 0;
+	font-size: 16px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.titular-ejemplo {
+	font-size: 20px;
 }
