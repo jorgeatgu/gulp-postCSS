@@ -9,7 +9,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var oldie = require("oldie");
 var rename = require('gulp-rename');
 var sorting = require('postcss-sorting');
-var colorblindPlugin = ("postcss-colorblind");
 
 
 gulp.task('css', function() {
@@ -27,8 +26,7 @@ gulp.task('css', function() {
 		autoprefixer,
 		sorting({
 			"sort-order": ["font-family", "font-size", "font-weight", "line-height"]
-		}),
-		colorblindPlugin
+		})
 		//sorting({
 		//	"sort-order": [ ["font-family", "font-size", "font-weight", "line-height"], ["margin", "padding", "width"] ]
 		//})
