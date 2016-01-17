@@ -79,3 +79,10 @@ body {
 		lost-column: 1/5;
 	}
 }
+
+.sexto {
+	height: 100%;
+	article {
+		lost-row: 1/3;
+	}
+}
