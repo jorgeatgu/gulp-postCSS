@@ -44,7 +44,6 @@ gulp.task('css', function() {
 		.pipe(rucksack())
 		.pipe(sourcemaps.init())
 		.pipe(postcss(processors))
-		.pipe(colorblindPlugin())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./dist/css'));
 
