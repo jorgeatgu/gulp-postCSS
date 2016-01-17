@@ -101,4 +101,106 @@ body {
 .segundo article:first-child {
 	margin-right: calc(99.99% * 1/3 - (30px - 30px * 1/3) + (30px * 2)) !important;
 }
+
+.tercero {
+	*zoom: 1;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(1, 255, 112, .5);
+	color: #001F3F;
+}
+
+.tercero:before {
+	content: '';
+	display: table;
+}
+
+.tercero:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tercero article {
+	width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+	background-color: rgb(1, 255, 112);
+}
+
+.tercero article:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.tercero article:last-child {
+	margin-right: 0;
+}
+
+.tercero article:nth-child(3n) {
+	margin-right: 0;
+}
+
+.tercero article:nth-child(3n + 1) {
+	clear: left;
+}
+
+.cuarto {
+	*zoom: 1;
+}
+
+.cuarto:before {
+	content: '';
+	display: table;
+}
+
+.cuarto:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.cuarto .un-cuarto {
+	width: calc(99.99% * 1/6 - (30px - 30px * 1/6));
+}
+
+.cuarto .un-cuarto:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.cuarto .un-cuarto:last-child {
+	margin-right: 0;
+}
+
+.cuarto .un-cuarto:nth-child(0n) {
+	margin-right: 0;
+}
+
+.cuarto .un-cuarto:nth-child(0n + 1) {
+	clear: left;
+}
+
+.cuarto .y-mitad {
+	width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+}
+
+.cuarto .y-mitad:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.cuarto .y-mitad:last-child {
+	margin-right: 0;
+}
+
+.cuarto .y-mitad:nth-child(0n) {
+	margin-right: 0;
+}
+
+.cuarto .y-mitad:nth-child(0n + 1) {
+	clear: left;
+}
 /*# sourceMappingURL=styles.css.map */
