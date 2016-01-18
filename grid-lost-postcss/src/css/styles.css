@@ -51,7 +51,7 @@ body {
 
 .segundo-negativo {
 	article:first-child {
-		lost-offset: row -1/3;
+		lost-offset: -2/3;
 	}
 }
 
@@ -66,17 +66,15 @@ body {
 }
 
 .cuarto {
-	lost-utility: clearfix;
+	lost-align: top-left;
+  	width: 100%;
+  	height: 400px;
 	bgc: rgba(127, 219, 255, .5);
 	article {
 		bgc: #7FDBFF;
 		color: #111;
-	}
-	.un-cuarto {
-		lost-column: 1/6 0;
-	}
-	.y-mitad {
-		lost-column: 2/6 0;
+		width: 300px;
+	  	height: 300px;
 	}
 }
 
