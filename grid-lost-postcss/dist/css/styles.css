@@ -259,6 +259,38 @@ body {
 	margin-bottom: 0;
 }
 
+.octavo article {
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.octavo article:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.octavo article:last-child {
+	margin-right: 0;
+}
+
+.octavo article:nth-child(2n) {
+	margin-right: 0;
+}
+
+.octavo article:nth-child(2n + 1) {
+	clear: left;
+}
+
+.octavo article:first-child {
+	position: relative;
+	left: calc(99.99% * 1/2 - (30px - 30px * 1/2) + 30px);
+}
+
+.octavo article:last-child {
+	position: relative;
+	left: calc(99.99% * -1/2 - (30px - 30px * -1/2) + 30px);
+}
+
 
 .btn-volver-blog {
 	font-size: 1rem;

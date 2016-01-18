@@ -108,6 +108,18 @@ body {
 	}
 }
 
+.octavo {
+	article {
+		lost-column: 1/2;
+		&:first-child {
+			lost-move: 1/2;
+		}
+		&:last-child {
+			lost-move: -1/2;
+		}
+	}
+}
+
 
 .btn-volver-blog {
 	bgc: #001F3F;
