@@ -296,11 +296,16 @@ body {
 	font-size: 1rem;
 
 	background-color: #001F3F;
-	color: #FFDC00;
 	border: 0;
 	padding: 1.25rem 1.88rem;
 	box-sizing: border-box;
 	cursor: pointer;
+}
+
+
+.btn-volver-blog a {
+	color: #FFDC00;
+	text-decoration: none;
 }
 
 .titular-ejemplo {

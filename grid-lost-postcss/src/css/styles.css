@@ -123,12 +123,15 @@ body {
 
 .btn-volver-blog {
 	bgc: #001F3F;
-	color: #FFDC00;
 	border: 0;
 	font-size: 16px;
 	padding: 20px 30px;
 	box-sizing: border-box;
 	cursor: pointer;
+	a {
+		color: #FFDC00;
+		text-decoration: none;
+	}
 }
 
 .titular-ejemplo {
