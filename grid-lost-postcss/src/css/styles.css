@@ -35,7 +35,8 @@ body {
 	}
 }
 
-.segundo {
+.segundo,
+.segundo-negativo {
 	lost-utility: clearfix;
 	bgc: rgba(255, 220, 0,.5);
 	color: #111;
@@ -48,8 +49,14 @@ body {
 	}
 }
 
+.segundo-negativo {
+	article:first-child {
+		lost-offset: row -1/3;
+	}
+}
+
 .tercero {
-	lost-center: 1024px;
+	lost-center: 900px;
 	bgc: rgba(1, 255, 112, .5);
 	color: #001F3F;
 	article {
@@ -75,9 +82,6 @@ body {
 
 .quinto {
 	lost-utility: edit;
-	article {
-		lost-column: 1/5;
-	}
 }
 
 .sexto {
