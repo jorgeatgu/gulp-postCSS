@@ -1,7 +1,7 @@
 {
   "name": "prueba",
   "version": "1.0.0",
-  "description": "Repositorio para hace pruebas con NPM",
+  "description": "Lanzando postCSS con scripts de NPM",
   "main": "index.js",
   "repository": {
     "type": "git",
