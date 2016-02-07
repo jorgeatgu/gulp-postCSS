@@ -1,0 +1,21 @@
+.foo {
+	color: crimson;
+	font-size: 1rem;
+	font-family: Arial, sans-serif;
+}
+
+.foo .build {
+	font-size: 2rem;
+}
+
+.foo .foo-build {
+	background-color: #fff;
+}
+
+.hola {
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	background-color: crimson;
+      }
+/*# sourceMappingURL=styles.css.map */

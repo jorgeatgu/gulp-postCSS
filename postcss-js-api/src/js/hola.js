@@ -1,0 +1,1 @@
+var foo = document.getElementById("prueba");

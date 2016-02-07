@@ -1,0 +1,11 @@
+.foo {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	color: crimson;
+	.build {
+		font-size: 32px;
+	}
+	.foo-build {
+		background-color: #fff;
+	}
+}
