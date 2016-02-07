@@ -6,23 +6,22 @@ var vars = require("postcss-simple-vars")
 var nested = require("postcss-nested")
 var pxToRem = require("postcss-pxtorem")
 var sorting = require("postcss-sorting")
-var messages = require("postcss-reporter")
-var devtools = require('postcss-devtools');
-
+var devtools = require('postcss-devtools')
 var css = fs.readFileSync("src/css/styles.css", "utf8")
 
-
-postcss([devtools(), require('autoprefixer')])
+postcss()
+	.use(devtools())
 	.use(atImport())
 	.use(vars())
 	.use(nested())
-	.use(pxToRem())
-	.use(sorting())
-	.use(messages({
-		formatter: function(input) {
-			return input.source + ' produced ' + input.messages.length + ' messages';
-		}
+	.use(pxToRem({
+		root_value: 16,
+		unit_precision: 2,
+		prop_white_list: ['font-size', 'line-height', 'padding'],
+		replace: true,
+		media_query: false
 	}))
+	.use(sorting())
 	.process(css, {
 		from: "./src/css/styles.css",
 		to: "./css/styles.css",
