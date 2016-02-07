@@ -1,28 +1,15 @@
 var fs = require("fs")
-var autoprefixer = require("autoprefixer")
 var postcss = require("postcss")
-var atImport = require("postcss-import")
-var vars = require("postcss-simple-vars")
-var nested = require("postcss-nested")
-var pxToRem = require("postcss-pxtorem")
-var sorting = require("postcss-sorting")
-var devtools = require('postcss-devtools')
 var css = fs.readFileSync("src/css/styles.css", "utf8")
 
-postcss()
-	.use(devtools())
-	.use(atImport())
-	.use(vars())
-	.use(nested())
-	.use(pxToRem({
-		root_value: 16,
-		unit_precision: 2,
-		prop_white_list: ['font-size', 'line-height', 'padding'],
-		replace: true,
-		media_query: false
-	}))
-	.use(sorting())
-	.process(css, {
+postcss([require('autoprefixer'), require('postcss-import'), require('postcss-simple-vars'), require('postcss-nested'), require('postcss-pxtorem')({
+	root_value: 16,
+	unit_precision: 2,
+	prop_white_list: ['font-size', 'line-height', 'padding'],
+	replace: true,
+	media_query: false
+}), require('postcss-sorting'), require('postcss-devtools')])
+.process(css, {
 		from: "./src/css/styles.css",
 		to: "./css/styles.css",
 		map: {

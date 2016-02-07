@@ -34,7 +34,7 @@
     "watch": "^0.17.1"
   },
   "scripts": {
-    "build:css": "watch 'node index.js' src/css/",
+  "build:css": "watch 'node index.js' src/css/",
     "build:js": "uglifyjs src/js/**.js -o js/index.min.js",
     "minify": "cleancss -o css/styles.min.css css/styles.css --source-map"
   }
