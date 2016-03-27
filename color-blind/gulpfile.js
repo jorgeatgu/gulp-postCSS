@@ -89,6 +89,15 @@ gulp.task('minify', function() {
         }));
 });
 
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./css'));
+});
+
 gulp.task('default', function() {
     gulp.watch('./src/css/*.css', ['css']);
     gulp.watch('./src/img/**', ['images']);
