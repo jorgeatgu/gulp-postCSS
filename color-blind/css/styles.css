@@ -1,7 +1,7 @@
 .foo {
-	color: crimson;
+	color: #414141;
 	font-size: 1rem;
-	font-family: Arial, sans-serif;
+	font-family: arial, sans-serif;
 }
 
 .foo .build {
@@ -9,10 +9,9 @@
 }
 
 .foo .foo-build {
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .foo-hola {
 	position: fixed;
 }
-/*# sourceMappingURL=styles.css.map */

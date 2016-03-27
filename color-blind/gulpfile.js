@@ -13,6 +13,7 @@ newer = require('gulp-newer');
 rename = require('gulp-rename');
 nano = require('gulp-cssnano');
 notify = require("gulp-notify");
+colorblind = require("postcss-colorblind");
 
 
 var imgSrc = './src/img/*';
