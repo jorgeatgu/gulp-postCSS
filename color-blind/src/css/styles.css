@@ -1,17 +1,38 @@
 @import '_variables';
 
-.protanotopia {
+body {
+	background-color: var(--bgc);
+	font-family: var(--fontSystem);
+}
 
+section {
+	padding: 20px;
+}
+
+.protanotopia {
+	background-color: var(--red);
+	p {
+		color: var(--green);
+	}
 }
 
 .deuteranopia {
-
+	background-color: var(--lightgreen);
+	p {
+		color: var(--black);
+	}
 }
 
 .tritanopia {
-
+	background-color: var(--blue);
+	p {
+		color: var(--yellow);
+	}
 }
 
 .acromatopsia {
-
+	background-color: var(--navy);
+	p {
+		color: var(--white);
+	}
 }
