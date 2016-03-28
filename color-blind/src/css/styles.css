@@ -7,6 +7,9 @@ body {
 
 section {
 	padding: 20px;
+	h2 {
+		color: var(--white);
+	}
 }
 
 .protanotopia {
