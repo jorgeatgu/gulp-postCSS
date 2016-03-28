@@ -109,7 +109,7 @@ gulp.task('blind-achromatomaly', function() {
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.achromatomaly'
         }))
         .pipe(gulp.dest('./css'));
 });
