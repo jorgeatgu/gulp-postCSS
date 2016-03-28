@@ -96,6 +96,93 @@ gulp.task('blind', function() {
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('blind', function() {
+    var processors = [colorblind({
+        method: 'achromatopsia'
+    })];
+    return gulp.src('./css/styles.css')
+        .pipe(postcss(processors))
+        .pipe(rename({
+            suffix: '.achromatopsia'
+        }))
         .pipe(gulp.dest('./css'));
 });
 
