@@ -102,9 +102,9 @@ gulp.task('blind', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-achromatomaly', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'achromatomaly'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
@@ -114,74 +114,74 @@ gulp.task('blind', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-protanomaly', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'protanomaly'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.protanomaly'
         }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-protanopia', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'protanopia'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.protanopia'
         }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-deuteranomaly', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'deuteranomaly'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.deuteranomaly'
         }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-deuteranopia', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'deuteranopia'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.deuteranopia'
         }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-tritanomaly', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'tritanomaly'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.tritanomaly'
         }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('blind', function() {
+gulp.task('blind-tritanopia', function() {
     var processors = [colorblind({
-        method: 'achromatopsia'
+        method: 'tritanopia'
     })];
     return gulp.src('./css/styles.css')
         .pipe(postcss(processors))
         .pipe(rename({
-            suffix: '.achromatopsia'
+            suffix: '.tritanopia'
         }))
         .pipe(gulp.dest('./css'));
 });
