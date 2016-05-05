@@ -23,7 +23,7 @@ gulp.task('css', function() {
         cssnext,
         autoprefixer,
         sorting({
-            "sort-order": "csscomb"
+            "sort-order": "zen"
         })
     ];
     return gulp.src('./src/css/styles.css')
