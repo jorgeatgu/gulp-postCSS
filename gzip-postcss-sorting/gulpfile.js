@@ -23,7 +23,7 @@ gulp.task('css', function() {
         cssnext,
         autoprefixer,
         sorting({
-            "sort-order": "zen"
+            "sort-order": "yandex"
         })
     ];
     return gulp.src('./src/css/styles.css')
@@ -43,5 +43,4 @@ gulp.task('minify', function() {
 
 gulp.task('default', function() {
     gulp.watch('./src/css/*.css', ['css']);
-    gulp.watch('./css/*.css', ['minify']);
 });
