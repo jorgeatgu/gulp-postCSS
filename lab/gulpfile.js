@@ -5,21 +5,23 @@ atImport = require('postcss-import');
 cssnext = require('postcss-cssnext');
 sorting = require('postcss-sorting');
 nested = require('postcss-nested');
-cssstats = require('postcss-cssstats');
+devtools = require('postcss-devtools');
+// cssstats = require('postcss-cssstats');
 
 gulp.task('css', function() {
     var processors = [
+        devtools,
         atImport,
         nested,
         cssnext,
         sorting({
             "sort-order": "csscomb"
-        }),
-        cssstats(
-            function(stats) {
-                console.log(stats);
-            }
-        )
+        })
+        // cssstats(
+        //     function(stats) {
+        //         console.log(stats);
+        //     }
+        // )
     ];
     return gulp.src('./src/css/styles.css')
         .pipe(sourcemaps.init())

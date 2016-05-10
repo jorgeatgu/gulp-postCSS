@@ -1,3 +1,7 @@
 .body {
-	background-color: crimson;
+	background-color: var(--color);
+}
+
+:root {
+	--color: crimson
 }
