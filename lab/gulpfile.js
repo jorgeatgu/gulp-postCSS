@@ -5,6 +5,7 @@ atImport = require('postcss-import');
 cssnext = require('postcss-cssnext');
 sorting = require('postcss-sorting');
 nested = require('postcss-nested');
+cssstats = require('postcss-cssstats');
 
 gulp.task('css', function() {
     var processors = [
@@ -13,12 +14,16 @@ gulp.task('css', function() {
         cssnext,
         sorting({
             "sort-order": "csscomb"
-        })
+        }),
+        cssstats(
+            function(stats) {
+                console.log(stats);
+            }
+        )
     ];
     return gulp.src('./src/css/styles.css')
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
-        .on("error", errorAlertPost)
         .pipe(sourcemaps.write('./css', {
             sourceRoot: '/src'
         }))
