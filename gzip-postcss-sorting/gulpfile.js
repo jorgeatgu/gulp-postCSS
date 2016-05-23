@@ -8,13 +8,7 @@ cssnext = require('postcss-cssnext');
 sorting = require('postcss-sorting');
 nested = require('postcss-nested');
 nano = require('gulp-cssnano');
-
-
-var imgSrc = './src/img/*';
-var imgDist = './img';
-var jsSrc = './src/js/*.js';
-var jsDist = './js';
-
+rename = require('gulp-rename');
 
 gulp.task('css', function() {
     var processors = [
@@ -35,8 +29,11 @@ gulp.task('css', function() {
 });
 
 gulp.task('minify', function() {
-    return gulp.src('./css/styles.css')
+    return gulp.src('./css/*.css')
         .pipe(nano())
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(gulp.dest('./css'));
 });
 
