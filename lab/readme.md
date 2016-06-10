@@ -7,3 +7,4 @@ Lugar para experimentar con plugins que me parecen interesantes
 - https://github.com/ben-eb/postcss-merge-rules
 - https://github.com/pascalduez/postcss-apply
 - https://github.com/arccoza/postcss-if-media
+- https://github.com/postcss/postcss-reporter
