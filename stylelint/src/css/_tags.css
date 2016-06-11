@@ -1,0 +1,18 @@
+.articulo-tag {
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+}
+
+.archivo ul {
+	list-style: none;
+}
+
+.archivo-etiquetas {
+	margin-top: 20px;
+}
+
+.archivo li {
+	margin: 10px 0;
+}
