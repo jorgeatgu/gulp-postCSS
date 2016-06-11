@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    display: block;
+    font-size: 0;
+}
+
+.menu-principal {
+    width: 100%;
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+}
+
+.menu-principal .menu-principal-li {
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-principal .menu-principal-li:first-child {
+    padding-right: 10px;
+}
+
+.menu-principal .menu-principal-li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 600;
+    color: var(--impureBlack);
+}
+
+.header-social {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 0;
+}
+
+.header-social .header-social-icons {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.header-social .header-social-icons:first-child,
+        .header-social .header-social-icons:last-child {
+    background-color: var(--impureBlack);
+}
+
+.header-social .header-social-icons:nth-child(2) {
+    background-color: var(--bgcTwitter);
+}
+
+.header-social .header-social-icons:last-child {
+    margin-right: 0;
+}
+
+.header-social .header-social-icons .iconos-footer {
+    width: 32px;
+    height: 32px;
+}
+
+/*# sourceMappingURL=_header.css.map */

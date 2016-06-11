@@ -1,0 +1,114 @@
+.boton-centrar {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-index {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--impureBlack);
+}
+
+.post-autores-tag {
+    font-size: 0.875rem;
+    background-color: #E5EDB7;
+    color: #642626;
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 0 5px 10px 0;
+    display: inline-block;
+}
+
+.btn {
+     font-size: 1rem;
+     text-decoration: none;
+     text-align: center;
+     padding: 16px;
+     border: 1px solid #a9a9a9;
+     color: #dc143c;
+     font-weight: 600;
+     background-color: #f8f8ff;
+     transition: background-color .3s;
+     display: inline-block;
+     width: auto;
+     max-width: 250px;
+}
+
+.btn:hover {
+    background-color: #66CDAA;
+}
+
+.btn-posterior {
+    margin-left: 5%;
+}
+
+.btn-anterior {
+    margin-right: 5%;
+}
+
+.scalable-leanpub {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-block;
+    font-weight: 600;
+    color: #B10DC9;
+    text-decoration: none;
+}
+
+.scalable-leanpub span {
+    color: var(--impureBlack);
+    display: block;
+}
+
+.scalable-leanpub span:last-child {
+    font-weight: 800;
+}
+
+.border-excerpt {
+    margin-bottom: 40px;
+}
+
+.border-excerpt p {
+    margin: 0;
+}
+
+.va-m {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.compartir {
+    margin: 10px 0;
+}
+
+
+.compartir .compartir-twitter,
+    .compartir .compartir-facebook,
+    .compartir .compartir-google {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+
+.compartir .compartir-twitter {
+    background-color: #55ACEE;
+}
+
+
+.compartir .compartir-facebook {
+    background-color: #3B5998;
+}
+
+
+.compartir .compartir-google {
+    background-color: #DC4E41;
+}
+
+/*# sourceMappingURL=_comunes.css.map */

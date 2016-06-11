@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontSystem);
+    color: var(--impureBlack);
+    background-color: var(--bgGeneral);
+}
+
+.container-boira {
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+iframe {
+    max-width: 300px;
+    display: block;
+}
+
+:--cabeceras {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #001F3F;
+}
+
+:--textos {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-heading {
+    font-size: 2.5rem;
+    color: salmon;
+    font-weight: 700;
+}
+
+.color-autor {
+    color: aliceblue;
+}
+
+.categoria-titulo,
+.categoria-titulo-index {
+    text-decoration: none;
+    color: #001F3F;
+    line-height: 2rem;
+    margin: 10px 0;
+}
+
+.categoria-titulo-index {
+    padding: 0;
+}
+
+.categoria-titulo h1,
+.post-contenido h1 {
+    margin: 0;
+}
+
+.categoria-titulo-index {
+    line-height: 2.125rem;
+    font-size: 1.75rem;
+    width: 100%;
+}
+
+.articulo-fecha {
+    width: 100%;
+    font-size: 0.875rem;
+    margin: 0;
+    font-weight: 700;
+    color: var(--clrAutores);
+    text-align: left;
+}
+
+.categoria-fecha {
+    font-size: 0.875rem;
+    color: #E45C5B;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.post-contenido {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.25rem;
+    list-style: none;
+    line-height: 1.75rem;
+    padding: 20px 0;
+}
+
+.paginacion {
+    font-size: 0;
+    text-align: center;
+}
+
+.paginacion.post-contenido {
+    margin-top: 0;
+    padding: 0;
+}
+
+blockquote {
+    background-color: #ECF0F5;
+    padding: 16px;
+    margin: 20px;
+    border-left: 7px solid crimson;
+}
+
+.archivado {
+    font-size: 0.875rem;
+}
+
+.archivado .archivado-texto {
+    color: var(--clrArchivo);
+    font-weight: 600;
+}
+
+.post-contenido.enlaces {
+    margin: 20px auto;
+}
+
+.post-leer-mas {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+    color: var(--impureBlack);
+}
+
+/*# sourceMappingURL=_layout.css.map */

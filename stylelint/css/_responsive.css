@@ -1,0 +1,68 @@
+/* ===== == = === desde 48em (768px) === = == ===== */
+
+@media only screen and (min-width: 48em) {
+    .header-nav {
+        padding-top: 15px;
+        font-size: 0;
+        display: block;
+    }
+    .menu-principal,
+    .header-social {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+    .header-social {
+        text-align: right;
+    }
+    .menu-principal-li a {
+        padding: 0;
+        display: inline-block;
+        border-bottom: 0;
+    }
+    .menu-principal-li a:hover {
+        color: crimson;
+        border-bottom: 3px solid var(--impureBlack);
+        transition: border-bottom .5s ease-in-out;
+    }
+    .social-header.post-contenido {
+        width: 49%;
+        display: inline-block;
+        text-align: right;
+    }
+    iframe {
+        max-width: 600px;
+    }
+    .container-boira {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header,
+    .post-contenido,
+    .categorita-titulo {
+        padding: 0;
+    }
+    .panel-poison.post-contenido {
+        margin-top: 60px;
+    }
+}
+/* ===== == = === 64em (1024px) === = == ===== */
+
+@media only screen and (min-width: 64em) {
+    .container-boira {
+        width: 60%;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+}
+/* ===== == = === 64em (1367px) === = == ===== */
+
+@media only screen and (min-width: 85.43em) {
+    .container-boira {
+        width: 50%;
+    }
+}
+
+/*# sourceMappingURL=_responsive.css.map */

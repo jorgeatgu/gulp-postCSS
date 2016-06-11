@@ -1,0 +1,17 @@
+.panel-poison {
+	margin-top: 20px;
+	text-align: center;
+	padding: 20px 0;
+}
+.panel-poison h3 {
+	font-size: 0.875rem;
+}
+.panel-poison svg {
+	width: 20px;
+	height: 20px;
+}
+.panel-poison .footer-l {
+	text-decoration: none;
+}
+
+/*# sourceMappingURL=_footer.css.map */
