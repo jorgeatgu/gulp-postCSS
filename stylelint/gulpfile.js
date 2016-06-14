@@ -14,6 +14,7 @@ var stylelintConfig = {
         "at-rule-empty-line-before": ["always", {
             except: ["blockless-group", "first-nested"],
             ignore: ["after-comment"],
+            message: ["probando mensajes"]
         }],
         "at-rule-name-case": "lower",
         "at-rule-name-space-after": "always-single-line",
