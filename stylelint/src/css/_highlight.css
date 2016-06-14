@@ -8,10 +8,10 @@ code {
     font-size: 20px;
 }
 
-pre > code:before {
+pre > code::before {
     content: "CODE: " attr(data-lang);
     display: block;
-    padding: .4em 0 1em 0;
+    padding: .4em 0 1em;
     text-transform: uppercase;
 
     font-size: 1em;
@@ -33,12 +33,12 @@ pre {
     }
 }
 
-​ .hll {
-    background-color: #ffffcc;
+​.hll {
+    background-color: #ffc;
 }
 
 .c {
-    color: #999988;
+    color: #998;
     font-style: italic;
 }
 /* Comment */
@@ -61,7 +61,7 @@ pre {
 
 .cm,
 .c1 {
-    color: #999988;
+    color: #998;
     font-style: italic;
 }
 /* Comment.Multiline */
@@ -76,7 +76,7 @@ pre {
 
 .gd {
 
-    background-color: #ffdddd;
+    background-color: #ffd;
 }
 /* Generic.Deleted */
 
@@ -88,13 +88,13 @@ pre {
 
 .gr,
 .gt {
-    color: #aa0000;
+    color: #a00;
 }
 /* Generic.Heading */
 
 .gi {
 
-    background-color: #ddffdd;
+    background-color: #dfd;
 }
 /* Generic.Inserted */
 
@@ -128,7 +128,7 @@ pre {
 /* Keyword.Reserved */
 
 .kt {
-    color: #445588;
+    color: #458;
     font-weight: bold;
 }
 /* Keyword.Type */
@@ -145,7 +145,7 @@ pre {
 /* Name.Builtin */
 
 .nc {
-    color: #445588;
+    color: #458;
     font-weight: bold;
 }
 /* Name.Constant */
@@ -164,7 +164,7 @@ pre {
 .ne,
 .nf,
 .nl {
-    color: #990000;
+    color: #900;
     font-weight: bold;
 }
 
@@ -194,7 +194,7 @@ pre {
 .mo,
 .il,
 .m {
-    color: #009999;
+    color: #099;
 }
 
 /* Literal.Number.Oct */
@@ -209,7 +209,7 @@ pre {
 .sx,
 .s1,
 .s {
-    color: #dd1144;
+    color: #d14;
 }
 
 /* Literal.String.Other */
