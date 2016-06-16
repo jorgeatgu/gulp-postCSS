@@ -64,22 +64,34 @@ var stylelintConfig = {
         "declaration-block-single-line-max-declarations": [1, {
             message: ["Declaración por línea. La legibilidad es innegociable!!"]
         }],
-        "declaration-block-trailing-semicolon": "always",
-        "declaration-colon-newline-after": "always-multi-line",
-        "declaration-colon-space-after": "always-single-line",
-        "declaration-colon-space-before": "never",
-        "function-calc-no-unspaced-operator": true,
-        "function-comma-newline-after": "always-multi-line",
-        "function-comma-space-after": "always-single-line",
-        "function-comma-space-before": "never",
+        "declaration-block-trailing-semicolon": ["always", {
+            message: ["Te has dejado un ; nada más que decir ¿no?"]
+        }],
+        "declaration-colon-space-after": ["always", {
+            message: ["Después de : siempre se deja espacio"]
+        }],
+        "declaration-colon-space-before": ["never", {
+            message: ["Antes de los : jamás se deja espacio"]
+        }],
+        "function-calc-no-unspaced-operator": [true, {
+            message: ["Los operadores matematicos siempre van acompañados de un espacio, antes y después. Siempre"]
+        }],
+        "function-comma-space-after": "always",
         "function-linear-gradient-no-nonstandard-direction": true,
         "function-max-empty-lines": 0,
-        "function-name-case": "lower",
-        "function-parentheses-newline-inside": "always-multi-line",
-        "function-parentheses-space-inside": "never-single-line",
-        "function-whitespace-after": "always",
-        "keyframe-declaration-no-important": true,
-        "max-empty-lines": 2,
+        "function-name-case": ["lower", {
+            message: ["Minúsculas"]
+        }],
+        "function-whitespace-after": ["always", {
+            message: ["spacebar"]
+        }],
+        "keyframe-declaration-no-important": [true, {
+            message: ["quita ese important"]
+        }],
+        "max-empty-lines": 1,
+        "max-nesting-depth": [2, {
+            message: ["No, no y no. Deja de abusar del nesting"]
+        }],
         "media-feature-colon-space-after": "always",
         "media-feature-colon-space-before": "never",
         "media-feature-no-missing-punctuation": true,
@@ -89,12 +101,24 @@ var stylelintConfig = {
         "media-query-list-comma-space-after": "always-single-line",
         "media-query-list-comma-space-before": "never",
         "media-query-parentheses-space-inside": "never",
-        "no-eol-whitespace": true,
-        "no-extra-semicolons": true,
-        "no-invalid-double-slash-comments": true,
-        "number-no-trailing-zeros": true,
-        "number-zero-length-no-unit": true,
-        "property-case": "lower",
+        "no-eol-whitespace": [true, {
+            message: ["A borrar los espacios"]
+        }],
+        "no-extra-semicolons": [true, {
+            message: ["Te sobra un ;"]
+        }],
+        "number-leading-zero": ["never", {
+            message: ["Escribiendo ceros de más"]
+        }],
+        "number-max-precision": [2, {
+            message: ["Sobran decimales."]
+        }],
+        "number-no-trailing-zeros": [true, {
+            message: ["Sobran ceros"]
+        }],
+        "property-case": ["lower", {
+            message: ["En minúsculas"]
+        }],
         "selector-attribute-brackets-space-inside": "never",
         "selector-attribute-operator-space-after": "never",
         "selector-attribute-operator-space-before": "never",
