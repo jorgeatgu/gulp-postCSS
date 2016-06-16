@@ -18,24 +18,26 @@ var stylelintConfig = {
         }],
         "at-rule-name-case": ["lower", {
             message: ["Las propiedades siempre en minúsculas"]
-        }]
+        }],
         "at-rule-name-space-after": "always-single-line",
         "at-rule-semicolon-newline-after": ["always", {
             message: ["Punto y coma = return"]
-        }]
+        }],
         "block-closing-brace-newline-after": ["always", {
             message: ["Llave = return"]
-        }]
+        }],
         "block-closing-brace-newline-before": ["always", {
             message: ["La llave de cierre siempre va sola "]
-        }]
+        }],
         "block-closing-brace-space-before": ["always", {
             message: ["La llave siempre lleva un espacio delante"]
-        }]
+        }],
         "block-no-empty": [true, {
             message: ["Propiedad vacía, golpe de remo por gañan."]
-        }]
-        "block-opening-brace-newline-after": "always-multi-line",
+        }],
+        "block-opening-brace-newline-after": ["always", {
+            message: ["Llave de apertura siempre va sola"]
+        }],
         "block-opening-brace-space-after": "always-single-line",
         "block-opening-brace-space-before": "always",
         "color-hex-length": "short",
