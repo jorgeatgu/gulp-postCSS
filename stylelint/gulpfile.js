@@ -38,19 +38,32 @@ var stylelintConfig = {
         "block-opening-brace-newline-after": ["always", {
             message: ["Llave de apertura siempre va sola"]
         }],
-        "block-opening-brace-space-after": "always-single-line",
-        "block-opening-brace-space-before": "always",
-        "color-hex-length": "short",
-        "color-no-invalid-hex": true,
+        "block-opening-brace-space-after": ["always", {
+            message: ["La llave de apertura siempre lleva espacio después"]
+        }],
+        "block-opening-brace-space-before": ["always", {
+            message: ["Propiedad y llave siempre separadas por un espacio"]
+        }],
+        "color-hex-length": ["short", {
+            message: ["¿Te gusta escribir más?"]
+        }],
+        "color-no-invalid-hex": [true, {
+            message: ["En la vida eso será un color"]
+        }],
         "comment-whitespace-inside": "always",
-        "declaration-bang-space-after": "never",
-        "declaration-bang-space-before": "always",
+        "declaration-bang-space-before": ["always", {
+            message: ["Que menos que dar un poco de separación a ese !important del averno"]
+        }],
         "declaration-block-no-ignored-properties": true,
-        "declaration-block-no-shorthand-property-overrides": true,
-        "declaration-block-semicolon-newline-after": "always-multi-line",
-        "declaration-block-semicolon-space-after": "always-single-line",
-        "declaration-block-semicolon-space-before": "never",
-        "declaration-block-single-line-max-declarations": 1,
+        "declaration-block-no-shorthand-property-overrides": [true, {
+            message: ["El shorthand en primer lugar. Ejemplo .foo { margin: 10px; margin-right: 5px; }"]
+        }],
+        "declaration-block-semicolon-space-before": ["never", {
+            message: ["Espacio antes del ; lo próximo será usar Bootstrap ¿no?"]
+        }],
+        "declaration-block-single-line-max-declarations": [1, {
+            message: ["Declaración por línea. La legibilidad es innegociable!!"]
+        }],
         "declaration-block-trailing-semicolon": "always",
         "declaration-colon-newline-after": "always-multi-line",
         "declaration-colon-space-after": "always-single-line",
