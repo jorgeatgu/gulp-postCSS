@@ -81,11 +81,9 @@
     vertical-align: middle;
 }
 
-
 .compartir {
     margin: 10px 0;
 }
-
 
 .compartir .compartir-twitter,
     .compartir .compartir-facebook,
@@ -96,16 +94,13 @@
     font-size: 0.875rem;
 }
 
-
 .compartir .compartir-twitter {
     background-color: #55ACEE;
 }
 
-
 .compartir .compartir-facebook {
     background-color: #3B5998;
 }
-
 
 .compartir .compartir-google {
     background-color: #DC4E41;

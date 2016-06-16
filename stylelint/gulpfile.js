@@ -29,17 +29,11 @@ var stylelintConfig = {
         "block-closing-brace-newline-before": ["always", {
             message: ["La llave de cierre siempre va sola "]
         }],
-        "block-closing-brace-space-before": ["always", {
-            message: ["La llave siempre lleva un espacio delante"]
-        }],
         "block-no-empty": [true, {
             message: ["Propiedad vacía, golpe de remo por gañan."]
         }],
         "block-opening-brace-newline-after": ["always", {
             message: ["Llave de apertura siempre va sola"]
-        }],
-        "block-opening-brace-space-after": ["always", {
-            message: ["La llave de apertura siempre lleva espacio después"]
         }],
         "block-opening-brace-space-before": ["always", {
             message: ["Propiedad y llave siempre separadas por un espacio"]
@@ -110,9 +104,9 @@ var stylelintConfig = {
         "number-leading-zero": ["never", {
             message: ["Escribiendo ceros de más"]
         }],
-        "number-max-precision": [2, {
-            message: ["Sobran decimales."]
-        }],
+        // "number-max-precision": [2, {
+        //     message: ["Sobran decimales."]
+        // }],
         "number-no-trailing-zeros": [true, {
             message: ["Sobran ceros"]
         }],
@@ -122,8 +116,12 @@ var stylelintConfig = {
         "selector-attribute-brackets-space-inside": "never",
         "selector-attribute-operator-space-after": "never",
         "selector-attribute-operator-space-before": "never",
-        "selector-combinator-space-after": "always",
-        "selector-combinator-space-before": "always",
+        "selector-combinator-space-after": ["always", {
+            message: ["Espacio entre selectores"]
+        }],
+        "selector-combinator-space-before": ["always", {
+            message: ["Espacio entre selectores"]
+        }],
         "selector-list-comma-newline-after": "always",
         "selector-list-comma-space-before": "never",
         "selector-max-empty-lines": 0,
@@ -149,12 +147,11 @@ var stylelintConfig = {
 gulp.task('css', function() {
     var processors = [
         nested,
-        autoprefixer,
-        pxtorem,
         stylelint(stylelintConfig),
         reporter({
             clearMessages: true
-        })
+        }),
+        pxtorem
     ];
     //Aquí la ruta de donde coge nuestros css
     return gulp.src('./src/css/*.css')
