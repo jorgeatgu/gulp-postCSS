@@ -129,17 +129,16 @@ var stylelintConfig = {
         "selector-pseudo-class-no-unknown": true,
         "selector-pseudo-class-parentheses-space-inside": "never",
         "selector-pseudo-element-case": "lower",
-        "selector-pseudo-element-colon-notation": "double",
+        "selector-pseudo-element-colon-notation": ["single", {
+            message: ["Doble para IE8. Estamos en 2016."]
+        }],
         "selector-pseudo-element-no-unknown": true,
         "selector-type-case": "lower",
         "selector-type-no-unknown": true,
         "shorthand-property-no-redundant-values": true,
         "string-no-newline": true,
         "unit-case": "lower",
-        "unit-no-unknown": true,
-        "value-list-comma-newline-after": "always-multi-line",
-        "value-list-comma-space-after": "always-single-line",
-        "value-list-comma-space-before": "never",
+        "unit-no-unknown": true
     },
 
 }
